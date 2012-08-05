@@ -10,7 +10,9 @@
     <!-- You can use the following instead of the intercept-url pattern in the next security:http element.
          However you _must_ bypass security for the login page in order to avoid infinite re-directions. -->
     <!-- security:http auto-config="true" security="none" pattern="/login.do"/> -->
-    
+
+    <security:http pattern="/favicon.ico" security="none" />
+
     <security:http auto-config="true" access-decision-manager-ref="accessDecisionManager">
         <security:intercept-url pattern="/login.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
         <security:intercept-url pattern="/*" access="ROLE_USER" />
@@ -44,7 +46,7 @@
     <security:authentication-manager>
         <security:authentication-provider ref="daoAuthenticationProvider"/>
     </security:authentication-manager>
-    
+
     <bean id="daoAuthenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
           <property name="userDetailsService" ref="userDetailsService"/>
           <property name="passwordEncoder" ref="passwordEncoder"/>

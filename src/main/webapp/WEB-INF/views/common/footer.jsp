@@ -1,1 +1,3 @@
-<span>Just Use It!</span>
+<footer>
+    <p>&copy; Company 2012</p>
+  </footer>

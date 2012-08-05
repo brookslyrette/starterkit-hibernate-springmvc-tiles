@@ -1,4 +1,4 @@
-A starter-kit to get you started with a Hibernate+Spring+Spring MVC+Spring Security+Tiles project quickly
+A starter-kit to get you started with a Hibernate+Spring+Spring MVC+Spring Security+Tiles+Bootstrap project quickly
 =========================================================================================================
 
 This provides and starter project template for Java web applications which are mainly based on spring/hibernate.
@@ -12,6 +12,7 @@ Frameworks in use
 * [Tiles 2.2.2](http://tiles.apache.org/)
 * [Slf4J 1.6.4](http://slf4j.apache.org/)
 * [Log4J 1.2.16](http://log4j.apache.org/)
+* [Twitter Bootstrap 2.0.4](http://twitter.github.com/bootstrap/index.html)
 
 ###Configured Database
 * [HSQLDB](http://hsqldb.org/)

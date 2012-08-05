@@ -1,19 +1,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<li>
-    <a class="first" href="<c:url value='/welcome.do' />">
-        <span class="square"></span>
-        User Welcome Page
-    </a>
-</li>
-<li>
-    <a href="<c:url value='/admin/welcome.do' />">
-        <span class="square"></span>
-        Admin Welcome Page
-    </a>
-</li>
-<li>
-    <a class="last" href="<c:url value='/j_spring_security_logout' />">
-        <span class="square"></span>
-        Logout
-    </a>
-</li>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+        <ul class="nav">
+          <li><a href="/welcome.do">User Welcome Page</a></li>
+          <li><a href="/admin/welcome.do">Admin Welcome Page</a></li>
+            <li><a href="/j_spring_security_logout">Logout</a></li>
+        </ul>
+    </div>
+  </div>
+</div>

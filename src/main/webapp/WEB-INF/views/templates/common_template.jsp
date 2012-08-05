@@ -4,14 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title><tiles:insertAttribute name="title"/></title>
-    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/style/style.css'/>"/>
+    <%--<link rel="stylesheet" type="text/css" href="<c:url value='/resources/style/style.css'/>"/>--%>
+
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/bootstrap/css/bootstrap.css'/>"/>
 </head>
 <body>
+
+<div class="container">
+    <tiles:insertAttribute name="menu" ignore="true"/>
     <div id="header">
         <tiles:insertAttribute name="header"/>
-    </div>
-    <div id="menu">
-        <tiles:insertAttribute name="menu" ignore="true"/>    
     </div>
     <div id="main">
         <tiles:insertAttribute name="body"/>
@@ -19,5 +21,7 @@
             <tiles:insertAttribute name="footer"/>
         </div>
     </div>
+
+</div>
 </body>
 </html>
